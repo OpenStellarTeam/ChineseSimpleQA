@@ -2,6 +2,28 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+}
 
 .footer .icon-link {
     font-size: 25px;
