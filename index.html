@@ -1452,6 +1452,61 @@ option = {
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
+          <h2 class="title is-3">Analysis On The Alignment Tax</h2>
+          <div class="image-container">
+              <img src="static/images/tax.png" alt="" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="description2", style="margin-top: 30px;">
+            <p> Recently, prior studies (OpenAI, 2023; Song et al., 2023) have found that the alignment can lead to
+                a decrease in the abilities of language models as known as the “alignment tax”. To illustrate the effect of alignment on factuality, we conduct a comparative performance analysis between pre-trained
+                models and aligned models that are trained with Supervised Fine-Tuning (SFT) or Reinforcement
+                Learning from Human Feedback (RLHF). As illustrated in Figure 6, different models exhibit varying
+                trends after post-training, but most models have a significant decline. Among these, the Baichuan2
+                series models show the most significant decreases, with Baichuan2-7B and Baichuan2-13B experiencing F-score reductions of 47% and 28%, respectively. This reflects that the alignment training of
+                most current LLMs still has obvious drawbacks to produce knowledge hallucinations, which further
+                reflects the necessity of our dataset.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Analysis On The Effect Of RAG</h2>
+          <div class="image-container">
+              <img src="static/images/rag.png" alt="" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="description2", style="margin-top: 30px;">
+            <p> In this study, we explore the effectiveness
+                of the Retrieval-Augmented Generation (RAG)
+                strategy in enhancing the factual accuracy of
+                large language models (LLMs) on the Chinese SimpleQA dataset. Specifically, we reproduce a RAG system based on LlamaIndex (Liu, 2022), incorporating Google search
+                APIs. As illustrated in Figure 5, all models demonstrate a substantial improvement in
+                accuracy with RAG. For example, the performance of Qwen2.5-3B improved more than
+                threefold. Notably, nearly all models with RAG
+                outperform the native GPT4-o model. Meanwhile, the application of RAG also leads to
+                a marked reduction in performance disparities
+                among models. For example, the F-score difference between the Qwen2.5-3B with RAG and
+                the Qwen2.5-72B with RAG is only 6.9%. This
+                suggests that RAG reduces the performance gaps on models greatly, enabling even smaller ones to
+                achieve high performance when augmented with RAG. Overall, this suggests that RAG serves as an
+                effective shortcut for enhancing the factuality of LLMs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
           <h2 class="title is-4">Dataset Examples</h2>
           <table class="table is-striped is-hoverable is-fullwidth">
             <thead>
