@@ -96,7 +96,7 @@ CHOICE_LETTER_TO_STRING = dict(zip(CHOICE_LETTERS, CHOICE_STRINGS))
 class ChineseSimpleQAEval(Eval):
     def __init__(self, grader_model: SamplerBase, num_examples: int | None = None, n_repeats: int = 1):
         
-        df = pandas.read_csv('chinese_simpleqa.csv')
+        df = pandas.read_csv('data/chinese_simpleqa.csv')
         
         examples = [row.to_dict() for _, row in df.iterrows()]
         if num_examples:
